@@ -5,6 +5,13 @@
 \subsection{Metodologia do projeto}
     A metodologia adotada para o desenvolvimento deste portfólio digital é baseada no modelo ágil, que prioriza a flexibilidade, a colaboração e a entrega incremental de valor. O processo foi dividido em etapas, começando com o levantamento de requisitos, seguido pela modelagem do sistema, prototipagem e testes. Essa abordagem permite uma adaptação rápida às mudanças nas necessidades do cliente e garante que o produto final atenda às expectativas.
 
+\subsubsection{Gerenciamento Ágil de Projetos}
+O gerenciamento ágil, inspirado no framework Scrum~ \cite{schwaber2001agile}, orientou o andamento do projeto. A plataforma Trello foi utilizada para acompanhamento das atividades em sprints quinzenais.
+
+\subsubsection{Engenharia de Requisitos}
+
+ De acordo com Sommerville~\cite{kotonya1998requirements}, a engenharia de requisitos é uma etapa fundamental no desenvolvimento de software, pois envolve a identificação, análise e documentação das necessidades do cliente. No caso deste portfólio digital, foram realizadas reuniões com o cliente para entender suas expectativas e requisitos funcionais e não funcionais. A partir dessas informações, foi possível elaborar um documento de requisitos que serviu como base para as etapas seguintes do projeto.
+
 \section{Ideação}
 %escrever oq sera apresentado
 
@@ -13,22 +20,30 @@ A fase de ideação foi crucial para o desenvolvimento do portfólio digital, on
 \subsection{Arquitetura Geral}
  A estrutura da arquitetura do portfólio digital foi concebida para ser intuitiva e responsiva, garantindo uma experiência de usuário fluida em diferentes dispositivos. A camada de apresentação é responsável pela interface do usuário. Dando a ela um design responsivo, utilizando HTML e CSS para a estrutura e estilo, respectivamente. O JavaScript foi integrado para adicionar interatividade e dinamismo à interface como algumas animações.
 
- \begin{figure} [h!]	
+\begin{figure}[H]
     \centering
+    \includegraphics[width=0.6\textwidth]{Figures/arquitetura.png} % use your image path and name here
+    \caption{Arquitetura.}
+    \label{fig:Arquitetura}
+\end{figure}
 
-    \caption{Arquitetura Geral}
-    \includegraphics[width=0.8\textwidth]{general_architecture}
-    \caption*{Fonte: Autoria própria.}
-    \label{fig:Arquitetura geral}
-\end{figure}	
-
-Para a central de gerenciamento do sistema utilizou-se o sistema operacional \textit{Ubuntu} 20.04 junto ao framework de robótica ROS \textit{Noetic}. Neste cojunto se encontram as principais funcionalidades do robô: percepção, navegação, detecção e controle. Por fim, no conjunto de saídas estão os atuadores e os alertas sonoro e luminoso.
+Neste conjunto se encontram as páginas principais do portfólio, como a página inicial, a seção de projetos e a página de contato.
 
 \subsection{Requisitos técnicos}
 
+Os requisitos técnicos foram definidos com base nas necessidades do cliente e nas melhores práticas de desenvolvimento web. A seguir, estão os principais requisitos:
+\begin{itemize}
+    \item \textbf{Tecnologias Utilizadas:} HTML, CSS e JavaScript.
+    \item \textbf{Funcionalidades:} O portfólio deve incluir uma página inicial, uma seção de projetos, uma página de contato e uma seção de certificados.
+    \item \textbf{Responsividade:} O design deve ser responsivo, adaptando-se a diferentes tamanhos de tela, incluindo dispositivos móveis e desktops.
+    \item \textbf{Desempenho:} O site deve carregar rapidamente e ser otimizado para uma boa performance, mesmo em conexões lentas.
+    \item \textbf{Manutenção:} O código deve ser bem documentado e organizado, facilitando futuras manutenções e atualizações.
+\end{itemize}
+
 %desdobramento da função qualidade
-% \subsection{Quality Function Deployment}
-% \textit{Quality Function Deployment} é uma ferramenta de qualidade que auxilia na conversão das demandas do cliente em características de qualidade do produto. Dessa forma, no primeiro ciclo do QFD foram analisados os requisistos do cliente e os requisitos técnicos necessários, sinalizando os pontos mais importantes e as relações entre estes. O resultado foi exposto na \ref{fig:QFD}
+\subsection{Quality Function Deployment}
+
+O QFD (Quality Function Deployment) foi utilizado para garantir que as necessidades do cliente fossem traduzidas em requisitos técnicos claros e mensuráveis. Através de uma matriz QFD, foram identificadas as prioridades do cliente e como elas se relacionam com as características do sistema. Essa abordagem ajudou a alinhar as expectativas do cliente com as funcionalidades do portfólio digital.
 
 % \begin{figure} [h!]	
 %     \centering
@@ -49,3 +64,18 @@ Para a central de gerenciamento do sistema utilizou-se o sistema operacional \te
 % % \label{sec:sim}
 % % \lipsum[2-4]
 \subsection{Modelagem dos processos}
+
+A modelagem dos processos foi realizada para mapear as interações do usuário com o portfólio digital. Utilizando diagramas e casos de uso, foram identificadas as principais ações que os usuários podem realizar, como navegar entre as seções, visualizar projetos e enviar mensagens através do formulário de contato. Essa modelagem ajudou a definir a lógica de navegação e a estrutura do site, garantindo uma experiência de usuário intuitiva e eficiente.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.6\textwidth]{Figures/modelo_esquematico_de_processos..pdf} % use your image path and name here
+    \caption{Modelo esquemático de processos.}
+    \label{fig:esquema}
+\end{figure}
+
+Essas informações advieram do modelo esquematico de processos, no qual consultamos o cliente para entender suas necessidades e expectativas.
+
+
+
+
